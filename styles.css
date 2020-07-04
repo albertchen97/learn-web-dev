@@ -2,15 +2,19 @@
 body{
     background-color:powderblue;
     width:1000px;
-    margin:20px 300px;
+    padding:20px 300px;
 }
 code{
     color:tomato;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,td{
     text-align:center;
     color:black;
     font-family:'Courier New', Courier, monospace;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 ul,p{
     font-family:'Courier New', Courier, monospace;
