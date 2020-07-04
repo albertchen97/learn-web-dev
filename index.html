@@ -2,6 +2,11 @@
 <html lang="en-US">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="description" content="A website that I built from scrath while learning web development using the tutorial on w3schools.com.">
+	<meta name="author" content="Albert Chen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> -->
 	<style>
 		h1,h2,h3,h4,h5,h6{
@@ -16,9 +21,20 @@
 			padding: 10px;
 			margin: 20px;
 		}
+		a:link, a:visited{
+			background-color:#ff6347;
+			color:white;
+			padding: 10px 25px;
+			text-align:center;
+			text-decoration:none;
+			display:inline-block;
+		}
+		a:hover, a:active{
+			background-color:red;
+		}
 	</style>
 	<title>
-		Page Title
+		Home Page
 	</title>
 </head>
 
@@ -200,7 +216,7 @@
 	<p style="background-color: hsla(0, 100%, 50%, 1);">alpha = 1</p>
 
 	<hr>
-	<h1>HTML Styles - CSS</h1>
+	<h1 id="CSS">HTML Styles - CSS</h1>
 	<p>CSS stands for <b>Cascading Style Sheets</b></p>
 	<p>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
 	<p>
@@ -253,6 +269,49 @@
 		<li><a href="index.html" target="_parent">target="_parent"</a></li>
 		<li><a href="index.html" target="_top">target="_top"</a></li>
 	</ul>
+
+	<h2>Link to an Email Address</h2>
+	<p><a href="mailto:albertchen2017@outlook.com">Send Email to Albert</a></p>
+
+	<hr>
+	<p>
+		Use CSS to remove the underline from the link:<br><br>
+		<a href="index.html" target="_blank" style="text-decoration: none;">Link Without Underline</a>
+	</p>
+
+
+	<h2>Link Button</h2>
+	<p>A link styled as a button:</p>
+	<a href="index.html" target="_blank">This is a link</a>
+
+	<hr>
+	<h2 id="book_mark">Create a Bookmark in HTML</h2>
+	<a href="#CSS">Jump to CSS</a>
+
+	<hr>
+	<h2 id="image">Image</h2>
+	<p style="padding: 10px 20px; background-color:blanchedalmond">
+		Note: Always specify the width and height of an image. If width and height are not
+		specified, the web page might flicker while the image loads.
+	</p>
+
+	<h2 id="image_maps">Image Maps</h2>
+	<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+	<map name="workmap">
+		<area shape="rect" coords="33,44,270,350" alt="Computer" href="">
+		<area shape="rect" coords="290,172,333,250" alt="Phone" href="">
+		<area shape="circle" coords="337,300,44" alt="Cup of coffee" onclick="myFunction()">
+	</map>
+	<script>
+		function myFunction(){
+			alert("You clicked the coffee cup!");
+		}
+	</script>
+
+	<hr>
+	<a href="background_cover.html" target="_blank">Background Cover</a>
+
 
 </body>
 
