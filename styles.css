@@ -1,6 +1,8 @@
 
 body{
     background-color:powderblue;
+    width:1000px;
+    margin:20px 300px;
 }
 code{
     color:tomato;

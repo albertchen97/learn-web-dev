@@ -33,5 +33,18 @@
             <source media="(min-width: 465px)" srcset="img_car.jpg">
             <img src="img_girl.jpg" style="width:auto">
         </picture>
+        <h2>When to use Picture Element:</h2>
+        <p>
+            <strong>1. Bandwidth</strong><br>
+            If you have a small screen or device, it is not neccesary to load a large image file.
+            The browser will use the first <code>&lt;source&gt;</code> element with matching attribute values,
+            and ignore any of the following elements.
+        </p>
+        <p>
+            <strong>2. Format Support</strong><br>
+            Some browsers or devices may not support all image formats. By using the <code>&lt;picture&gt;</code> 
+            element, you can add images of all formats, and the browser will use the first format it recognizes,
+            and ignore any of the following elements.
+        </p>
 	</body>
 </html>
