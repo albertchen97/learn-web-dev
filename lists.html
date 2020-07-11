@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Albert Chen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>HTML Lists</title>
+    </head>
+    <body>
+        <h1>HTML Lists</h1>
+        <ul>
+            <li>Ordered List</li>
+            <li>Unordered List</li>
+            <li>Description List</li>
+        </ul>
+
+        <hr>
+        <h2>Example of Description List</h2>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+
+        <hr>
+        <ul style="list-style-type: circle;">
+            <li>Coffee</li>
+            <li>Milk</li>
+            <li>Tea</li>
+        </ul>
+
+        <hr>
+        <h2>A Nested List</h2>
+        <p>Lists can be nested (list inside list):</p>
+        <ul style="list-style-type: square">
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea
+                        <ol>
+                            <li>Type 1</li>
+                            <li>Type 2</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+
+        <hr>
+        <h2>Horizontal List with CSS</h2>
+        <p>
+            List can be styled in many ways.<br>
+            One popular way is to style a list horizontally, to create a navigation menu.<br>
+            To do this, you just need to add the <code>float: left</code> attribute into the <code>&lt;li&gt;</code> element.
+        </p>
+        <ul id="navigation-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        
+    </body>
+</html>
