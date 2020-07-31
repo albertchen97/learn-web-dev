@@ -50,9 +50,10 @@ a{
     font-family:'Courier New', Courier, monospace;
 }
 a:link, a:visited{
-    background-color:#ff6347;
+    background-color:hsl(9, 100%, 64%);
     color:white;
-    padding: 10px 25px;
+    padding: 5px 10px;
+    margin: 5px;
     text-align:center;
     text-decoration:none;
     display:inline-block;
